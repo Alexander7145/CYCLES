@@ -26,17 +26,21 @@ public class Main {
             System.out.println(i);
         }
         int saved = 29000;
-        int deposit = 0;
+        int vbanku = 0;
         for (int i = 1; i <= 12; i++) {
-            deposit = deposit + saved;
-            System.out.println(" Месяц " + i + " сумма накоплений равна " + deposit + " рублей ");
-            {
-                deposit = deposit + saved;
-                deposit = deposit + deposit / 100;
-                System.out.println(" Месяц " + i + " сумма накоплений равна " + deposit + " рублей ");
-            }
+            vbanku = vbanku + saved;
+            System.out.println(" Месяц " + i + " сумма накоплений равна " + vbanku + " рублей ");}
 
+        int stored = 29000;
+        int deposit = 0;
+        for (int i = 1; i <=12; i++){
+            deposit = deposit + deposit/100;
+            deposit = deposit + stored;
+            System.out.println(" Месяц " + i + " сумма накоплений равна " + deposit + " рублей ");
         }
+
+
+
         for (int i = 1; i <=10 ; i ++)
             System.out.println("2 * " + i + " = " + 2 * i);
 
